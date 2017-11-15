@@ -5,4 +5,4 @@ services:
     image: nerddinner
     build:
       context: .\src
-      dockerfile: Dockerfile.WinCore
+      dockerfile: Dockerfile

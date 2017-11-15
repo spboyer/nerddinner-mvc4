@@ -284,6 +284,7 @@
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
+    <Content Include="Dockerfile.WinCore" />
     <None Include="Properties\PublishProfiles\nerddinnerlift.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\accent.png" />

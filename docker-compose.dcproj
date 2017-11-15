@@ -9,10 +9,6 @@
     <DockerServiceName>nerddinner</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="docker-compose.wincore.override.yml">
-      <DependentUpon>docker-compose.wincore.yml</DependentUpon>
-    </None>
-    <None Include="docker-compose.wincore.yml" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>

@@ -168,3 +168,5 @@ src/Web.Release.config
 src/Web.Release.config
 src/Web.Release.config
 src/Web.Release.config
+/.vs/NerdDinner/v15/Server/sqlite3/storage.ide-shm
+/.vs/NerdDinner/v15/Server/sqlite3/storage.ide-wal

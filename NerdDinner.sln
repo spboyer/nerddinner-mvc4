@@ -1,11 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27009.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdDinner", "src\NerdDinner.csproj", "{895CEE2D-D913-427F-9BFF-1343EC5CAAC4}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9790F354-6F72-40DE-BA6D-41552E4F0062}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azd", "azd", "{81CC6D53-A9D2-44DE-9D67-DC1C87B72E61}"
+	ProjectSection(SolutionItems) = preProject
+		azure.yaml = azure.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{A65E6121-05D5-4A4C-9664-C72ACC55C87A}"
+	ProjectSection(SolutionItems) = preProject
+		infra\abbreviations.json = infra\abbreviations.json
+		infra\main.bicep = infra\main.bicep
+		infra\main.parameters.json = infra\main.parameters.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{A1D77E43-8903-4E04-8295-8E30A4F1C8BE}"
+	ProjectSection(SolutionItems) = preProject
+		infra\app\db.bicep = infra\app\db.bicep
+		infra\app\web.bicep = infra\app\web.bicep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{7DDCB098-7BAE-43D4-AA6B-F844FD3F805E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{859CF938-8ABF-4B2E-8C0D-02B9A763E8BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sqlserver", "sqlserver", "{CF18857B-E639-4C4A-8768-14059EF041A7}"
+	ProjectSection(SolutionItems) = preProject
+		infra\core\database\sqlserver\sqlserver.bicep = infra\core\database\sqlserver\sqlserver.bicep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "host", "host", "{75760339-3675-4A07-B090-6D8E5DFD8B1A}"
+	ProjectSection(SolutionItems) = preProject
+		infra\core\host\appservice.bicep = infra\core\host\appservice.bicep
+		infra\core\host\appserviceplan.bicep = infra\core\host\appserviceplan.bicep
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +57,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A65E6121-05D5-4A4C-9664-C72ACC55C87A} = {81CC6D53-A9D2-44DE-9D67-DC1C87B72E61}
+		{A1D77E43-8903-4E04-8295-8E30A4F1C8BE} = {A65E6121-05D5-4A4C-9664-C72ACC55C87A}
+		{7DDCB098-7BAE-43D4-AA6B-F844FD3F805E} = {A65E6121-05D5-4A4C-9664-C72ACC55C87A}
+		{859CF938-8ABF-4B2E-8C0D-02B9A763E8BD} = {7DDCB098-7BAE-43D4-AA6B-F844FD3F805E}
+		{CF18857B-E639-4C4A-8768-14059EF041A7} = {859CF938-8ABF-4B2E-8C0D-02B9A763E8BD}
+		{75760339-3675-4A07-B090-6D8E5DFD8B1A} = {7DDCB098-7BAE-43D4-AA6B-F844FD3F805E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE857FB8-A084-44DC-B342-775EDA9A21C8}
